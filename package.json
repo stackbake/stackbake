@@ -1,0 +1,11 @@
+{
+  "name": "nextel",
+  "version": "0.0.0",
+  "description": "nextel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gilson Gilbert",
+  "license": "MIT"
+}
