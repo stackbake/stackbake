@@ -1,6 +1,6 @@
 {
   "name": "nxtu",
-  "version": "0.0.4",
+  "version": "0.0.4-unstable1",
   "description": "nxtu",
   "main": "src/index.js",
   "author": "Gilson Gilbert | NxtOpen",
