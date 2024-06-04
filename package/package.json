@@ -1,7 +1,7 @@
 {
-  "name": "nxtopen",
+  "name": "nxtu",
   "version": "0.0.0",
-  "description": "nxtopen",
+  "description": "nxtu",
   "main": "src/index.js",
   "author": "Gilson Gilbert | NxtOpen",
   "license": "MIT"

@@ -15,7 +15,7 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org/
       - run: |
-          cd /package
+          cd ./package
           git config --global user.email "gilzon.me@gmail.com"
           git config --global user.name "Gilson Gilbert"
           npm publish --access public
