@@ -33,11 +33,13 @@ const YoutubePreview = ({ videoUrl }) => {
   console.log(embedData)
 
   return (
+    <a href={videoUrl} target='_blank'>
     <div className="video-card">
       <h3>{embedData.title}</h3>
       <p>{embedData.author_name}</p>
       <img src={embedData.thumbnail_url} alt={embedData.title} />
     </div>
+    </a>
   );
 };
 
