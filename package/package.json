@@ -1,7 +1,7 @@
 {
-  "name": "nextpro",
+  "name": "youtube-preview",
   "version": "0.0.0",
-  "description": "nextpro",
+  "description": "youtube-preview",
   "main": "src/index.js",
   "author": "Gilson Gilbert | NxtOpen",
   "license": "MIT"
