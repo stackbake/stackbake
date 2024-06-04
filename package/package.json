@@ -1,7 +1,7 @@
 {
-  "name": "youtube-preview",
+  "name": "nextgo",
   "version": "0.0.0",
-  "description": "youtube-preview",
+  "description": "nextgo",
   "main": "src/index.js",
   "author": "Gilson Gilbert | NxtOpen",
   "license": "MIT"
