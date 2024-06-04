@@ -4,5 +4,6 @@
   "description": "nxtu",
   "main": "src/index.js",
   "author": "Gilson Gilbert | NxtOpen",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "nxtu.dev"
 }
