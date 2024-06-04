@@ -5,4 +5,4 @@
 
 WIP :
 
-[*] Youtube preview
+✓ Youtube preview
