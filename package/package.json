@@ -1,7 +1,7 @@
 {
-  "name": "usenext",
+  "name": "nextpro",
   "version": "0.0.0",
-  "description": "usenext",
+  "description": "nextpro",
   "main": "src/index.js",
   "author": "Gilson Gilbert | NxtOpen",
   "license": "MIT"
