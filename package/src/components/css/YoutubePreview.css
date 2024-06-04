@@ -5,7 +5,6 @@
     padding: 16px;
     max-width: 400px;
     margin: 16px auto;
-    text-align: center;
     background-color: #fff;
 }
 
@@ -19,6 +18,7 @@
     font-size: 1em;
     margin-bottom: 16px;
     color: #777;
+    font-weight: bolder;
 }
 
 .video-card img {
