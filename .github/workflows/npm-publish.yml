@@ -19,6 +19,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: |
           cp README.md ./package/README.md
+          cp LICENSE.md ./package/LICENSE.md
           cd ./package
           git config --global user.email "gilzon.me@gmail.com"
           git config --global user.name "Gilson Gilbert"
