@@ -30,8 +30,6 @@ const YoutubePreview = ({ videoUrl }) => {
     return null;
   }
 
-  console.log(embedData)
-
   return (
     <a href={videoUrl} target='_blank'>
     <div className="video-card">
