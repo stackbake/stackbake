@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       {/* <YoutubePreview videoUrl="https://www.youtube.com/watch?v=1wECsnGZcfc" /> */}
-      <UPI upiOptions={{"payeeVPA":"9526451205@ybl","payeeName":"Gilson Gilbert (NxtBiz)","transactionId":100}} />
+      <UPI upiOptions={{"payeeVPA":"9526451205@ybl","payeeName":"Gilson Gilbert (NxtBiz)","amountm":100}} />
     </main>
   );
 }

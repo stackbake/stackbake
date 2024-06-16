@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Box, Button, Typography, CircularProgress } from '@mui/material';
+import { Box, Button, Typography, CircularProgress, Grid, TextField } from '@mui/material';
 import upiqr from 'upiqr';
 
 const UPI = ({ upiOptions }) => {
@@ -58,10 +58,28 @@ const UPI = ({ upiOptions }) => {
       bgcolor="background.paper"
       m={2}
       boxSizing="border-box"
+      width="100%"
+      maxWidth="600px"
     >
-      <img src={upi.qr} alt="UPI QR Code" style={{ maxWidth: '100%', height: 'auto', marginBottom: '10px' }} />
-      <p style={{ "color": "black", marginBottom: '10px' }}>Scan QR using Any UPI App</p>
-      <a href={upi.intent}><Button variant="contained">Pay using UPI App</Button></a>
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={6} display="flex" justifyContent="center">
+          <img src={upi.qr} alt="UPI QR Code" style={{ maxWidth: '100%', height: 'auto', marginBottom: '10px' }} />
+        </Grid>
+        <Grid item xs={12} sm={6} display="flex" flexDirection="column" justifyContent="center">
+          <Typography variant="body1" style={{ color: 'black', marginBottom: '10px' }}>
+            Scan QR using Any UPI App
+          </Typography>
+          <TextField
+            id="outlined-number"
+            label="Number"
+            type="number"
+            value={upiOptions.amount}
+          />
+          <a href={upi.intent}>
+            <Button style={{ textDecoration: 'none', marginBottom: '10px', marginTop: '10px' }} variant="contained">Pay using UPI App</Button>
+          </a>
+        </Grid>
+      </Grid>
     </Box>
   );
 };
