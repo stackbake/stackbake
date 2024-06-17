@@ -6,11 +6,12 @@ on:
       - main
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  pre-test:
     strategy:
       matrix:
         node-version: [18,20,21]
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -30,6 +31,7 @@ jobs:
     permissions:
       contents: read
       id-token: write
+    needs: pre-test
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
