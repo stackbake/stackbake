@@ -6,6 +6,24 @@ on:
       - main
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16, 18, 20]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: cd ./package
+      - run: npm i
+      - run: npm link
+      - run: cd ../test
+      - run: npm link nxtu
+      - run: npm install
+      - run: npm run build
+
   publish-npm:
     runs-on: ubuntu-latest
     permissions:
