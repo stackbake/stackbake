@@ -6,6 +6,9 @@
   "author": "Gilson Gilbert | NxtOpen",
   "license": "MIT",
   "homepage": "nxtu.dev",
+  "repository": {
+    "url": "https://github.com/nxtopen/nxtu"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
