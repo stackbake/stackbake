@@ -1,6 +1,8 @@
+"use client"
 import { useState, useEffect } from 'react';
 import { Box, Button, Typography, CircularProgress, Grid } from '@mui/material';
 import upiqr from 'upiqr';
+import { isMobile } from 'react-device-detect';
 
 const UPI = ({ upiOptions }) => {
   const [upi, setUpi] = useState(null);
@@ -53,7 +55,7 @@ const UPI = ({ upiOptions }) => {
     >
       {!upi ? (
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={12} display="flex" justifyContent="center">
+          <Grid item xs={12} display="flex" justifyContent="center">
             <span style={{ color: 'black' }}>
               <svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" fillRule="evenodd">
                 <path d="M95.678 42.9L110 29.835l-6.784-13.516z" fill="#097939" />
@@ -62,13 +64,13 @@ const UPI = ({ upiOptions }) => {
               </svg>
             </span>
           </Grid>
-          <Grid item xs={12} sm={12} display="flex" justifyContent="center">
+          <Grid item xs={12} display="flex" justifyContent="center">
             <CircularProgress />
           </Grid>
         </Grid>
       ) : (
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={12} display="flex" justifyContent="center">
+          <Grid item xs={12} display="flex" justifyContent="center">
             <span style={{ color: 'black' }}>
               <svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" fillRule="evenodd">
                 <path d="M95.678 42.9L110 29.835l-6.784-13.516z" fill="#097939" />
@@ -83,13 +85,15 @@ const UPI = ({ upiOptions }) => {
           <Grid item xs={12} sm={8} display="flex" flexDirection="column" justifyContent="center">
             <h1 style={{ color: 'black' }}>{upiOptions.amount}</h1>
             <p style={{ color: 'black' }}>{upiOptions.note}</p>
-            <a href={upi.intent}>
-              <Button style={{ textDecoration: 'none', marginBottom: '10px', marginTop: '10px' }} variant="contained">
-                Pay {upiOptions.amount}
-              </Button>
-            </a>
+            {isMobile && (
+              <a href={upi.intent} style={{ textDecoration: "none" }}>
+                <Button fullWidth style={{ textDecoration: 'none', marginBottom: '10px', marginTop: '10px' }} variant="contained">
+                  Pay {upiOptions.amount}
+                </Button>
+              </a>
+            )}
           </Grid>
-          <Grid item xs={12} sm={12} display="flex" justifyContent="center">
+          <Grid item xs={12} display="flex" justifyContent="center">
             <span style={{ color: 'black' }}>Scan QR using any UPI app or Click on "Pay" to open UPI App</span>
           </Grid>
         </Grid>
