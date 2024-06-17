@@ -16,13 +16,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd ./package
-      - run: npm i
-      - run: npm link
-      - run: cd ../test
-      - run: npm link nxtu
-      - run: npm install
-      - run: npm run build
+      - run: |
+             cd ./package
+             npm i
+             npm link
+             cd ../test
+             npm link nxtu
+             npm install
+             npm run build
 
   publish-npm:
     runs-on: ubuntu-latest
