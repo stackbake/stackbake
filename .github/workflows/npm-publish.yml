@@ -49,6 +49,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
   post-test:
+    needs: publish-npm
     strategy:
       matrix:
         node-version: [18,20,21]
@@ -60,7 +61,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: |
-              cd ../test
+              cd ./test
               npm install
               npm install nxtu
               npm run build
