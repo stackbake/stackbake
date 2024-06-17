@@ -21,8 +21,8 @@ jobs:
              npm i
              npm link
              cd ../test
-             npm link nxtu
              npm install
+             npm link nxtu
              npm run build
 
   publish-npm:
