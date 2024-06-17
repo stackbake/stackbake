@@ -16,7 +16,7 @@ If you encounter a bug, have a question, or want to request a new feature, pleas
    ```
 3. Add the original repository as a remote:
    ```sh
-   git remote add upstream https://github.com/original-username/nxtu.git
+   git remote add upstream https://github.com/nxtopen/nxtu.git
    ```
 
 ### Creating a Branch
