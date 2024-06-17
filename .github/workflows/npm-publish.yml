@@ -8,6 +8,7 @@ on:
 jobs:
   pre-test:
     strategy:
+      max-parallel: 10
       matrix:
         node-version: [18,20,21]
         os: [ubuntu-latest, windows-latest]
@@ -51,6 +52,7 @@ jobs:
   post-test:
     needs: publish-npm
     strategy:
+      max-parallel: 10
       matrix:
         node-version: [18,20,21]
         os: [ubuntu-latest, windows-latest]
