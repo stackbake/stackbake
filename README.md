@@ -3,6 +3,7 @@
 
 ⚠️ This is not a stable release and not advised to be used in production yet.
 
-WIP :
+Features:
 
-✓ Youtube preview
+[*] Youtube Preview Card
+[*] UPI Payment Card
