@@ -18,7 +18,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Introduction <span>-&gt;</span>
+            Demos <span>-&gt;</span>
           </h2>
           <p>Find in-depth information about NXTU.</p>
         </a>
@@ -29,7 +29,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Getting Started <span>-&gt;</span>
+            Get Started <span>-&gt;</span>
           </h2>
           <p>Learn how to start with using the package</p>
         </a>
