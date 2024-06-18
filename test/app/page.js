@@ -15,7 +15,6 @@ export default function Home() {
         <a
           href="https://docs.nxtu.dev/"
           className={styles.card}
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
@@ -27,7 +26,6 @@ export default function Home() {
         <a
           href="https://docs.nxtu.dev/getting-started"
           className={styles.card}
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
@@ -39,7 +37,6 @@ export default function Home() {
         <a
           href="https://docs.nxtu.dev/components"
           className={styles.card}
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
@@ -51,7 +48,6 @@ export default function Home() {
         <a
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
