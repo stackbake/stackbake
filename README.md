@@ -5,5 +5,5 @@
 
 Features:
 
-[*] Youtube Preview Card
-[*] UPI Payment Card
+- [Youtube Preview Card](https://docs.nxtu.dev/components/youtube-preview-card)
+- [UPI Payment Card](https://docs.nxtu.dev/components/upi-payment-card)
