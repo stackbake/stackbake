@@ -1,0 +1,27 @@
+.upi-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3px;
+    max-width: 400px;
+    margin: 16px auto;
+    background-color: #fff;
+}
+
+.video-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.video-card p {
+    font-size: 1em;
+    margin-bottom: 16px;
+    color: #777;
+    font-weight: bolder;
+}
+
+.video-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}

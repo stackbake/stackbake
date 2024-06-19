@@ -7,7 +7,7 @@
   "license": "MIT",
   "homepage": "nxtu.dev",
   "scripts": {
-    "build": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib --copy-files"
   },
   "repository": {
     "url": "https://github.com/nxtopen/nxtu"
