@@ -2,7 +2,7 @@
   "name": "nxtu",
   "version": "0.0.61",
   "description": "nxtu",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "author": "Gilson Gilbert | NxtOpen",
   "license": "MIT",
   "homepage": "nxtu.dev",
