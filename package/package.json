@@ -2,10 +2,13 @@
   "name": "nxtu",
   "version": "0.0.61",
   "description": "nxtu",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "author": "Gilson Gilbert | NxtOpen",
   "license": "MIT",
   "homepage": "nxtu.dev",
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
   "repository": {
     "url": "https://github.com/nxtopen/nxtu"
   },
@@ -15,5 +18,11 @@
     "@mui/material": "^5.15.20",
     "react-device-detect": "^2.2.3",
     "upiqr": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7"
   }
 }

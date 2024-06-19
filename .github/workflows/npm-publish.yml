@@ -21,6 +21,7 @@ jobs:
       - run: |
              cd ./package
              npm i
+             npm run build
              npm link
              cd ../test
              npm install
@@ -43,6 +44,7 @@ jobs:
           cp README.md ./package/README.md
           cp LICENSE ./package/LICENSE
           cd ./package
+          npm run build
           git config --global user.email "gilzon.me@gmail.com"
           git config --global user.name "Gilson Gilbert"
           npm publish --provenance --access public

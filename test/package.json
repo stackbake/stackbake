@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "14.2.4",
+    "nxtu": "^0.0.61",
     "react": "^18",
     "react-dom": "^18"
   },
