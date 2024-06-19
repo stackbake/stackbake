@@ -2,12 +2,12 @@
   "name": "nxtu",
   "version": "0.0.61",
   "description": "nxtu",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "author": "Gilson Gilbert | NxtOpen",
   "license": "MIT",
   "homepage": "nxtu.dev",
   "scripts": {
-    "build": "babel src --out-dir lib --copy-files"
+    "build": "tsc && copyfiles -u 1 ./src/components/css/* ./dist"
   },
   "repository": {
     "url": "https://github.com/nxtopen/nxtu"
@@ -16,13 +16,14 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.20",
+    "react": "^18.3.1",
     "react-device-detect": "^2.2.3",
     "upiqr": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.7",
-    "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
-    "@babel/preset-react": "^7.24.7"
+    "@types/node": "^20.14.5",
+    "@types/react": "^18.3.3",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.4.5"
   }
 }
