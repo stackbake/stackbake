@@ -1,19 +1,24 @@
-"use client"
-import { YoutubePreview, UPI } from 'nxtu'
+"use client";
+import { YoutubePreview, UPI } from 'nxtu';
 
 export default function Home() {
   return (
-    <main>
-      <YoutubePreview videoUrl="https://www.youtube.com/watch?v=1wECsnGZcfc" />
-      <UPI
-        upiOptions={
-          {
+    <main className="container">
+      <div className="row">
+        <div className="col-md-4 mb-4">
+          <YoutubePreview videoUrl="https://www.youtube.com/watch?v=1wECsnGZcfc" />
+        </div>
+      </div>
+      <div className="mt-4">
+        <UPI
+          upiOptions={{
             "payeeVPA": "9526451205@ybl",
             "payeeName": "Gilson Gilbert (NxtBiz)",
             "amount": 100,
             "note": "Test transaction using UPI"
-          }
-        } />
+          }}
+        />
+      </div>
     </main>
   );
 }

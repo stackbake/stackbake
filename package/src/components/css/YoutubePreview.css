@@ -4,8 +4,23 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 16px;
     max-width: 400px;
-    margin: 16px auto;
     background-color: #fff;
+
+    /* Background Pattern */
+    background-color: #e5e5f7;
+    background-size: 4px 4px;
+    background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3) 0.4px, rgba(229, 229, 247, 0.3) 0, rgba(229, 229, 247, 0.3) 50%);
+}
+
+.no-text-decoration {
+    text-decoration: none !important;
+}
+.no-text-decoration:hover {
+    text-decoration: none !important;
+}
+
+.no-text-decoration:active {
+    text-decoration: none !important;
 }
 
 .video-card h3 {
@@ -25,3 +40,20 @@
     max-width: 100%;
     border-radius: 8px;
 }
+
+.youtube-preview {
+    min-height: 50vh;
+}
+
+.youtube-preview a {
+    text-decoration: none;
+  }
+  
+  .youtube-preview a:hover {
+    text-decoration: none;
+  }
+  
+  .youtube-preview .MuiCardActionArea-root:hover .MuiTypography-root {
+    text-decoration: none;
+  }
+  

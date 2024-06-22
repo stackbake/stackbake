@@ -6,6 +6,7 @@
   "author": "Gilson Gilbert | NxtOpen",
   "license": "MIT",
   "homepage": "nxtu.dev",
+  "keywords": ["upi","upiqr","youtube"],
   "scripts": {
     "build": "tsc && copyfiles -u 1 ./src/components/css/* ./dist"
   },
