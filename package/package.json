@@ -15,7 +15,7 @@
     "build": "tsc && copyfiles -u 1 ./src/components/css/* ./dist"
   },
   "repository": {
-    "url": "https://github.com/nxtopen/nxtu",
+    "url": "https://github.com/nxtopen/nxtu"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
