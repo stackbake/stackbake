@@ -1,6 +1,6 @@
 {
   "name": "nxtu",
-  "version": "0.0.78",
+  "version": "0.0.79",
   "description": "Reusable Components for NextJS React - UPI, Youtube Preview",
   "main": "dist/index.js",
   "author": "Gilson Gilbert | NxtOpen",
