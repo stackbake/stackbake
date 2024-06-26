@@ -1,9 +1,9 @@
 "use client"
 import { useState, useEffect } from 'react';
 import { Box, Button, Typography, CircularProgress, Grid } from '@mui/material';
-import upiqr from 'upiqr';
 import { isMobile } from 'react-device-detect';
 import React from 'react';
+import { QRCodeCanvas } from 'qrcode.react';
 
 interface UpiOptions {
   payeeVPA: string;
@@ -21,29 +21,18 @@ interface UpiOptions {
 const UPI: React.FC<{ upiOptions: UpiOptions }> = ({ upiOptions }) => {
   const [upi, setUpi] = useState<any | null>(null);
   const [error, setError] = useState<Error | null>(null);
-
+  const [qrvalue, setqrValue] = useState<string | null>('');
   useEffect(() => {
-    upiqr({
-      payeeVPA: upiOptions.payeeVPA,
-      payeeName: upiOptions.payeeName,
-      amount: upiOptions.amount,
-      transactionNote: upiOptions.note,
-      transactionRefUrl: upiOptions.transactionRefUrl,
-      transactionRef: upiOptions.transactionRef,
-      payeeMerchantCode: upiOptions.payeeMerchantCode,
-      minimumAmount: upiOptions.minimumAmount,
-      currency: upiOptions.currency,
-      transactionId: upiOptions.transactionId,
-    })
-      .then((upi: any) => {
-        console.log(upi.qr);
-        console.log(upi.intent);
-        setUpi(upi);
-      })
-      .catch((err: Error) => {
-        console.log(err);
-        setError(err);
-      });
+    let upistring = 'upi://pay?pa='
+    upistring = upistring + upiOptions.payeeVPA
+    if (upiOptions.payeeName) upistring = upistring + '&pn=' + upiOptions.payeeName
+    if (upiOptions.amount) upistring = upistring + '&am=' + upiOptions.amount
+    if (upiOptions.minimumAmount) upistring = upistring + '&mam=' + upiOptions.minimumAmount
+    if (upiOptions.payeeMerchantCode) upistring = upistring + '&me=' + upiOptions.payeeMerchantCode
+    if (upiOptions.transactionId) upistring = upistring + '&tid=' + upiOptions.transactionId
+    if (upiOptions.transactionRef) upistring = upistring + '&tr=' + upiOptions.transactionRef
+    if (upiOptions.note) upistring = upistring + '&tn=' + upiOptions.note
+    setqrValue(upistring)
   }, [upiOptions]);
 
   if (error) {
@@ -67,7 +56,7 @@ const UPI: React.FC<{ upiOptions: UpiOptions }> = ({ upiOptions }) => {
       m={2}
       boxSizing="border-box"
     >
-      {!upi ? (
+      {!qrvalue ? (
         <Grid container spacing={2}>
           <Grid item xs={12} display="flex" justifyContent="center">
             <span style={{ color: 'black' }}>
@@ -94,15 +83,16 @@ const UPI: React.FC<{ upiOptions: UpiOptions }> = ({ upiOptions }) => {
             </span>
           </Grid>
           <Grid item xs={12} sm={4} display="flex" justifyContent="center">
-            <img src={upi.qr} alt="UPI QR Code" style={{ maxWidth: '100%', height: 'auto', marginBottom: '10px' }} />
+            <QRCodeCanvas value={qrvalue} />
+            {/* <img src={upi.qr} alt="UPI QR Code" style={{ maxWidth: '100%', height: 'auto', marginBottom: '10px' }} /> */}
           </Grid>
           <Grid item xs={12} sm={8} display="flex" flexDirection="column" justifyContent="center">
-            <h1 style={{ color: 'black' }}>{upiOptions.amount}</h1>
+            <h1 style={{ color: 'black' }}>₹{upiOptions.amount}</h1>
             <p style={{ color: 'black' }}>{upiOptions.note}</p>
             {isMobile && (
               <a href={upi.intent} style={{ textDecoration: "none" }}>
                 <Button fullWidth style={{ textDecoration: 'none', marginBottom: '10px', marginTop: '10px' }} variant="contained">
-                  Pay {upiOptions.amount}
+                  Pay ₹{upiOptions.amount}
                 </Button>
               </a>
             )}

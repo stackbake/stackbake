@@ -12,6 +12,11 @@ export default function Home() {
       <div className="mt-4">
         <UPI
           upiOptions={{
+            "transactionRefUrl":"https://google.com",
+            "transactionRef":"google.com",
+            "payeeMerchantCode":"somecode",
+            "minimumAmount":"1",
+            "transactionId":"0101011",
             "payeeVPA": "9526451205@ybl",
             "payeeName": "Gilson Gilbert (NxtBiz)",
             "amount": 100,
