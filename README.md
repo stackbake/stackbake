@@ -1,4 +1,4 @@
-<img src="banner.png" />
+<img src="https://raw.githubusercontent.com/nxtopen/nxtu/main/banner.png" />
 
 ## NXTU - NeXT Usable - Usable components for Websites
 
