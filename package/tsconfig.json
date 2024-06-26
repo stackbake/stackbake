@@ -1,22 +1,26 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "declaration": true,
-        "module": "commonjs",
-        "lib": [
-            "es6",
-            "dom"
-        ],
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "moduleResolution": "node",
-        "jsx": "react",
-        "outDir": "dist"
-    },
-    "assets":["src/components/css/*"],
-    "include": [
-        "src/**/*"
-    ]
+  "compilerOptions": {
+    "target": "es5",
+    "declaration": true,
+    "declarationDir": "./dist",
+    "module": "commonjs",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

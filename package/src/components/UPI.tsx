@@ -8,7 +8,7 @@ import { QRCodeCanvas } from 'qrcode.react';
 interface UpiOptions {
   payeeVPA: string;
   payeeName: string;
-  amount: string;
+  amount: number;
   note: string;
   transactionRefUrl?: string;
   transactionRef?: string;

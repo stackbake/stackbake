@@ -12,7 +12,8 @@
     "youtube"
   ],
   "scripts": {
-    "build": "tsc && copyfiles -u 1 ./src/components/css/* ./dist"
+    "build": "tsc && npm run copy-css",
+    "copy-css": "copyfiles -u 1 \"./src/components/css/*\" ./dist"
   },
   "repository": {
     "url": "https://github.com/nxtopen/nxtu"
