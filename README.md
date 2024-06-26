@@ -1,4 +1,6 @@
-# NXTU - NeXT Usable - Usable components for Websites
+<img src="banner.png" />
+
+## NXTU - NeXT Usable - Usable components for Websites
 
 #### Collection of useful reusable components for your projects
 
