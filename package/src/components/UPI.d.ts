@@ -2,9 +2,9 @@ import React from 'react';
 
 export interface UpiOptions {
   payeeVPA: string;
-  payeeName: string;
-  amount: string;
-  note: string;
+  payeeName?: string;
+  amount?: number;
+  note?: string;
   transactionRefUrl?: string;
   transactionRef?: string;
   payeeMerchantCode?: string;
