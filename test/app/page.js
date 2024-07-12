@@ -1,9 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-location.href = "docs.nxtu.dev"
 
 export default function Home() {
+location.href = "docs.nxtu.dev"
+
   return (
     <main className={styles.main}>
       <div className={styles.center}>
