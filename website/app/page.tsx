@@ -9,18 +9,16 @@ export default function Home() {
           🚀 New Components Update Soon
         </p>
         <div>
-          <a href="https://www.producthunt.com/products/nxtu/reviews?utm_source=badge-product_review&utm_medium=badge&utm_souce=badge-nxtu" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=588817&theme=dark" alt="NextJS&#0032;Reusable&#0032;Components&#0032;&#0045;&#0032;NxtU - Usable&#0032;components&#0032;for&#0032;Websites | Product Hunt" style={{ width: "250px", height: "54px" }} /></a>
-        </div>
+        <a href="https://www.producthunt.com/posts/nextjs-reusable-components-nxtu?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-nextjs&#0045;reusable&#0045;components&#0045;nxtu" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=464054&theme=dark" alt="NxtU | Product Hunt" style={{width:"250px",height:"54px"}} /></a>        </div>
       </div>
 
       <div className={styles.center}>
-        <Image
+        <img
           src="/nxtu.png"
           alt="Next.js Logo"
           style={{ filter: "invert(100%);" }}
           width={200}
           height={160}
-          priority
         />
       </div>
 
