@@ -3,8 +3,6 @@ import styles from "./page.module.css";
 
 
 export default function Home() {
-location.href = "docs.nxtu.dev"
-
   return (
     <main className={styles.main}>
       <div className={styles.center}>
