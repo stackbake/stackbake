@@ -5,11 +5,14 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
+        <p style={{fontWeight:"bolder"}}>
           🚀 New Components Update Soon
         </p>
         <div>
-        <a href="https://www.producthunt.com/posts/nextjs-reusable-components-nxtu?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-nextjs&#0045;reusable&#0045;components&#0045;nxtu" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=464054&theme=dark" alt="NxtU | Product Hunt" style={{width:"250px",height:"54px"}} /></a>        </div>
+          <a href="https://www.producthunt.com/posts/nextjs-reusable-components-nxtu?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-nextjs&#0045;reusable&#0045;components&#0045;nxtu" target="_blank">
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=464054&theme=dark" alt="NxtU | Product Hunt" style={{ width: "250px", height: "54px" }} />
+          </a>
+        </div>
       </div>
 
       <div className={styles.center}>
@@ -24,7 +27,7 @@ export default function Home() {
 
       <div className={styles.grid}>
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="//docs.nxtu.dev"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -36,7 +39,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="//docs.nxtu.dev/components"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -48,7 +51,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="/"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -60,7 +63,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="/"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
