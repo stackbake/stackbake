@@ -3,7 +3,7 @@
   "version": "0.0.01-Pre",
   "description": "Reusable Components for NextJS React - UPI, Youtube Preview",
   "main": "dist/index.js",
-  "author": "Gilson Gilbert | NxtOpen",
+  "author": "StackBake",
   "license": "MIT",
   "homepage": "docs.nxtu.dev",
   "keywords": [
@@ -16,7 +16,7 @@
     "copy-css": "copyfiles -u 1 \"./src/components/css/*\" ./dist"
   },
   "repository": {
-    "url": "https://github.com/nxtopen/nxtu"
+    "url": "https://github.com/stackbake/stackbake"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
