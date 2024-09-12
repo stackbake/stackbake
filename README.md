@@ -7,7 +7,7 @@
 ## Import
 
 ```
-import { YoutubePreview,UPI } from 'nxtu'
+import { YoutubePreview,UPI } from 'stackbake'
 ```
 
 ## Components
