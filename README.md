@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/nxtopen/nxtu/main/banner.png" />
+<!-- <img src="https://raw.githubusercontent.com/nxtopen/nxtu/main/banner.png" /> -->
 
 ## StackBake Components - reusable components and tools for faster developmnet
 
