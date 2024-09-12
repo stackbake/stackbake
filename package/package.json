@@ -1,11 +1,11 @@
 {
   "name": "stackbake",
-  "version": "0.0.01-Pre",
+  "version": "0.0.01-1-Pre",
   "description": "Reusable Components for NextJS React - UPI, Youtube Preview",
   "main": "dist/index.js",
   "author": "StackBake",
   "license": "MIT",
-  "homepage": "docs.nxtu.dev",
+  "homepage": "components.stackbake.com",
   "keywords": [
     "upi",
     "upiqr",
