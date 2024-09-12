@@ -1,7 +1,7 @@
-# NXTU (NeXT reUsable) Code of Conduct
+# NXTU StackBake Components Code of Conduct
 
 ## Introduction
-Welcome to NXTU (NeXT reUsable)! This project aims to create a collection of useful reusable components for your Next.js projects. To ensure a positive experience for everyone, we have established the following Code of Conduct.
+Welcome to NXTU StackBake Components! This project aims to create a collection of useful reusable components for your Next.js projects. To ensure a positive experience for everyone, we have established the following Code of Conduct.
 
 ## Our Pledge
 In the interest of fostering an open and welcoming environment, we pledge to make participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.

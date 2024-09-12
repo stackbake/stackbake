@@ -1,7 +1,7 @@
 
-# Contributing to NXTU (NeXT reUsable)
+# Contributing to StackBake Components
 
-We welcome contributions to NXTU (NeXT reUsable)! Here are some guidelines to help you get started.
+We welcome contributions to StackBake Components! Here are some guidelines to help you get started.
 
 ## How to Contribute
 
@@ -71,4 +71,4 @@ By participating in this project, you agree to abide by the NXTU Code of Conduct
 ## Contact
 If you have any questions or need further assistance, feel free to contact the project maintainers.
 
-Thank you for contributing to NXTU (NeXT reUsable)!
+Thank you for contributing to StackBake Components!

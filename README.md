@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/nxtopen/nxtu/main/banner.png" />
 
-## NXTU - NeXT Usable - Usable components for Websites
+## StackBake Components - reusable components and tools for faster developmnet
 
 #### Collection of useful reusable components for your projects
 
