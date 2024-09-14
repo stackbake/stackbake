@@ -16,7 +16,7 @@
     "copy-css": "copyfiles -u 1 \"./src/components/css/*\" ./dist"
   },
   "repository": {
-    "url": "https://github.com/stackbake/stackbake"
+    "url": "https://github.com/stackbake/stackbake-components"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
