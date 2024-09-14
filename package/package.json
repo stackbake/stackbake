@@ -1,6 +1,6 @@
 {
   "name": "stackbake",
-  "version": "0.0.01-1-Pre",
+  "version": "0.0.02",
   "description": "Reusable Components for NextJS React - UPI, Youtube Preview",
   "main": "dist/index.js",
   "author": "StackBake",
